@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myProject</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap');
+
+        .header__logo {
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 25px;
+            color: black;
+        }
+
+        .menu__list {
+            font-family: Inter;
+            font-weight: 500;
+            font-size: 25px;
+            color: black;
+        }
+
+        .header__container {
+            height: 43px;
+            width: 1288px;
+            display: flex;
+            text-align: center;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 37px;
+            margin-left: 63px;
+            margin-left: 89px;
+            /* position: absolute; */
+        }
+
+        .menu__list {
+            display: flex;
+            gap: 60px;
+            ;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        [class*="__container"] {
+            max-width: 1440px;
+        }
+
+        #purple a {
+            color: #7319CD;
+        }
+
+        .text-image__container {
+            /* ТУТ ограничь по ширине как и шапку весь блок и отцентруй его типо*/
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+
+
+
+        /* .greeting {
+            height: 30px;
+            width: 90px;
+            font-family: Inter;
+            font-weight: 800;
+            font-size: 25px;
+            margin-top: 152px;
+            margin-left: 112px;
+            align-items: center;
+            position: absolute;
+        } */
+
+        .autor__name {
+            height: 36px;
+            width: 250px;
+            /* font-family: Inter;
+            font-weight: 700;
+            font-size: 30px;
+            margin-top: 182px;
+            margin-left: 112px;
+            color: #7319CD;
+            align-items: center;
+            position: absolute; */
+        }
+
+        .profession {
+            /* height: 216px;
+            width: 537px;
+            font-family: Inter;
+            font-weight: 800;
+            font-size: 96px;
+            margin-top: 222px;
+            margin-left: 109px;
+            color: #000;
+            align-items: center;
+            position: absolute; */
+        }
+
+        .text {
+            /* font-family: Inter;
+            font-weight: 400;
+            font-size: 23px;
+            width: 657px;
+            height: 168px;
+            align-items: center;
+            position: absolute;
+            margin-top: calc(481px / 4);
+            margin-left: 109px; */
+        }
+
+        .image {
+            /* display: flex-end;
+            justify-content: right;
+            margin-right: 106.85px;
+            margin-top: 248px;
+            width: 440.94px;
+            height: 467.38px; */
+            /* position: absolute; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header__container">
+            <div class="header__logo">Logo</div>
+            <nav class="header__menu">
+                <ul class="menu__list">
+                    <li class="menu__item" id="purple"><a href="" class="menu__link">Home</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">Projects</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">Blog</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <div class="text-image__container">
+                <div class="text">
+                    <div class="greeting">Hi! I am</div>
+                    <div class="autor__name">Vlad Sapozhnyk</div>
+                    <div class="profession">Software Engineer</div>
+                    <div class="text">
+                        I am an ambitious student at the Kyiv Professional College of Communications.
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="img/myPhoto.jpg" alt="myPhoto">
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
